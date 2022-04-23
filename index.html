@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+░██████╗░███████╗░█████╗░██╗░░░██╗░█████╗░███╗░░██╗██╗
+██╔════╝░██╔════╝██╔══██╗██║░░░██║██╔══██╗████╗░██║██║
+██║░░██╗░█████╗░░██║░░██║╚██╗░██╔╝███████║██╔██╗██║██║
+██║░░╚██╗██╔══╝░░██║░░██║░╚████╔╝░██╔══██║██║╚████║██║
+╚██████╔╝███████╗╚█████╔╝░░╚██╔╝░░██║░░██║██║░╚███║██║
+░╚═════╝░╚══════╝░╚════╝░░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░╚══╝╚═╝
+
+I am not the rightful owner for any of these games, if you would like a game removed and you are the rightful owner please join my discord server and message me.
+<html lang="en">
+    <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7FP5JG6EW1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7FP5JG6EW1');
+</script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Geovani's Games.</title>
+        <meta name="keywords" content="front-end web developer, ublocked, code, coding, programmer, development, javascript, jquery, bootstrap, sass, less, git" />
+        <meta property="og:title" content="Geovani's Games" />
+        <meta property="og:site_name" content="Geovani's Games" />
+        <meta property="og:description" content="play games, watch videos, movies and have fun" />
+        <meta name="description" content="play games, watch videos, movies and have fun" />
+        <meta name="author" content="Geovani" />
+        <link rel="stylesheet" href="/css/style.css" />
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <style>
+            .hcb-comment-body {
+                color: white;
+            }
+            .closebtn {
+                margin-left: 15px;
+                color: white;
+                font-weight: bold;
+                float: right;
+                font-size: 22px;
+                line-height: 20px;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+            .closebtn:hover {
+                color: #000000;
+            }
+            .card {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                max-width: 300px;
+                border-radius: 10px;
+                background-color: #2b2b2b;
+                text-align: center;
+                font-family: arial;
+            }
+            a {
+                text-decoration: none;
+                font-size: 22px;
+                color: black;
+            }
+            .header {
+                border: 16px solid DodgerBlue;
+                border-radius: 16px;
+            }
+            .text1 {
+                font-size: 50px;
+            }
+            .line {
+                border-radius: 4px;
+                border: 4px solid DodgerBlue;
+            }
+            .white {
+                color: white;
+            }
+            .black {
+                color: black;
+            }
+            .desc {
+                color: gray;
+                font-size: 16px;
+                padding: 5px;
+            }
+            button {
+                border: none;
+                outline: 0;
+                display: inline-block;
+                padding: 8px;
+                color: white;
+                border-radius: 10px;
+                background-color: #000;
+                text-align: center;
+                cursor: pointer;
+                width: 100%;
+                font-size: 18px;
+            }
+            .flex-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-items: center;
+                align-content: center;
+            }
+            .flex-container > div {
+                margin: 1px;
+                padding: 3px;
+            }
+            .hcb-comment-body {
+                color: white;
+                font-family: 'Montserrat';
+            }
+            .thumb {
+                border-radius: 10px;
+            }
+            button:hover,
+            a:hover {
+                opacity: 0.7;
+            }
+            .center {
+                margin: auto;
+                width: 60%;
+                border: 0px solid #73ad21;
+                padding: 10px;
+            }
+            .centertxt {
+                text-align: center;
+                border: 0px solid green;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="particles-js"></div>
+        <div class="container">
+            <div class="box__row">
+                <div data-cell="1" class="box__row-cell">
+                    <div class="box__row-cell-info"><p class="box__row-cell-info-title">Information</p></div>
+                    <div class="box__row-cell-info"><div class="box__row-cell-info-sign"></div></div>
+                    <div class="box__row-cell-info--full"><h1 class="box__row-cell-info--full-heading">Information</h1></div>
+                </div>
+                <div data-cell="2" class="box__row-cell">
+                    <div class="box__row-cell-info"><p class="box__row-cell-info-title">Changelog</p></div>
+                    <div class="box__row-cell-info"><div class="box__row-cell-info-sign"></div></div>
+                    <div class="box__row-cell-info--full"><h1 class="box__row-cell-info--full-heading">Changelog</h1></div>
+                </div>
+            </div>
+            <div class="box__row">
+                <div data-cell="3" class="box__row-cell">
+                    <div class="box__row-cell-info"><p class="box__row-cell-info-title">Miscellaneous</p></div>
+                    <div class="box__row-cell-info"><div class="box__row-cell-info-sign"></div></div>
+                    <div class="box__row-cell-info--full"><h1 class="box__row-cell-info--full-heading">Miscellaneous</h1></div>
+                </div>
+                <div data-cell="4" class="box__row-cell">
+                    <div class="box__row-cell-info"><p class="box__row-cell-info-title">Games</p></div>
+                    <div class="box__row-cell-info"><div class="box__row-cell-info-sign"></div></div>
+                    <div class="box__row-cell-info--full"><h1 class="box__row-cell-info--full-heading">Games</h1></div>
+                </div>
+            </div>
+            <div data-content="1" class="box__content">
+                <div class="box__content-wrapper">
+                    <div class="box__content-inner">
+                        <div class="box__content-text">
+                            <h2 class="box__content-text-heading">Information</h2>
+                            <p class="box__content-text-par"></p>
+                            <p class="box__content-text-par">
+                                I would recommend using a laptop or desktop while playing Geovani's Games, not sure if a tablet or a ipad works.
+                                But i do know a phone does not work because the website is overall broken. 
+
+                            </p>
+                            <p class="box__title-par"></p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-content="2" class="box__content">
+                <div class="box__content-wrapper">
+                    <div class="box__content-inner">
+                        <div class="box__content-text">
+                            <h2 class="box__content-text-heading">v1.6.1 released</h2>
+                            <h3 class="box__content-text-heading">4/21/2022</h3>
+
+                           <div>new website</a></div>
+                           <div>added terraria</a></div>
+
+            
+                          
+                           <h3 class="box__content-text-heading">Last Update</h3>
+                           
+                           <div>decided to re-add talking ben</a></div>
+                           <div>added sift heads world act 1-7</a></div>
+                           <div>added sift renegade 3</a></div>
+                           <div>added five nights at freddys</a></div>
+                           <div>added johnny rocketfingers 1</a></div>
+                           <div>added mimai shark</a></div> 
+                           <div>added ashbelt</a></div>
+                           <div>added johnny rocketfingers 2</a></div>
+                           <div>added thing thing 4</a></div>
+                           <div>added temple run 2</a></div> 
+                           <div>added eaglercraft</a></div>
+                           
+                           
+                           
+
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-content="3" class="box__content">
+                <div class="box__content-wrapper">
+                    <div class="box__content-inner">
+                        <div class="box__content-text">
+                            <h2 class="box__content-text-heading">Miscellaneous</h2>
+                            <div><a href="https://classroom-google-com.github.io/ok/" style="color: #4036ff;font-size: 18px;">Youtube</a></div>
+                            <div><a href="https://megashare-website.com/" style="color: #4036ff;font-size: 18px;">Megashare Movies</a></div>
+                            <div><a href="https://www.2embed.ru/" style="color: #4036ff;font-size: 18px;">2embed Movies</a></div>
+                            <div><a href="https://www.google.com/search?q=%5BMovie+name+here%5D+tokyvideo+movie&rlz=1C1ONGR_enUS957US957&oq=%5BMovie+name+here%5D+tokyvideo+movie&aqs=chrome..69i57j33i160.22533j1j7&sourceid=chrome&ie=UTF-8" style="color: #4036ff;font-size: 18px;">Movies</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-content="4" class="box__content">
+                <div class="box__content-wrapper">
+                    <div class="box__content-inner">
+                        <div class="box__content-text">
+                            <h2 class="box__content-text-heading">Geovani's Games<br><div style="font-size: 14px;">We are always opened to suggestions. <a href="https://forms.gle/ptc1zNpu4DXEqwvR8" style="color: #4036ff;font-size: 14px;">Enter it here!</a></div></h2>
+                            </p>
+                            <div class="flex-container">
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/mortalkombat.jpg" alt=" " />
+                                        <h1 style="color: white;">Mortal Kombat</h1>
+                                        <p class="desc">By NetherRealm Studios</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/mk/geovani.html'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/doodle.jpg" alt=" " />
+                                        <h1 style="color: white;">Doodle Jump</h1>
+                                        <p class="desc">By Lima Sky</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/doodle/'">Play</button>                     
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/supermario64.jpg" alt=" " />
+                                        <h1 style="color: white;">Super Mario 64</h1>
+                                        <p class="desc">By Nintendo</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/superm64/'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/fancypants.png" alt=" " />
+                                        <h1 style="color: white;">Fancy Pants Adventure</h1>
+                                        <p class="desc">By Borne Games</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/fpa/fpa.html'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/retrobowl.png" alt=" " />
+                                        <h1 style="color: white;">Retro Bowl</h1>
+                                        <p class="desc">By New Star Games</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/rb/'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/gunmayhem.jpg" alt=" " />
+                                        <h1 style="color: white;">Gun Mayhem 2</h1>
+                                        <p class="desc">By Kevin Gu</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/gm2/gm2.html'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/fridaynight.jpg" alt=" " />
+                                        <h1 style="color: white;font-size: 29px;">Friday Night Funkin'</h1>
+                                        <p class="desc">By Ninjamuffin99</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/fnf/'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/cookieclicker.jpg" alt=" " />
+                                        <h1 style="color: white;">Cookie Clicker</h1>
+                                        <p class="desc">By Orteil</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/cookies/'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/project.jpg" alt=" " />
+                                        <h1 style="color: white;">Project Nexus</h1>
+                                        <p class="desc">By Gibbing Tree, LLC</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/nexus/geovani.html'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/drifthunters.png" alt=" " />
+                                        <h1 style="color: white;">Drift Hunters</h1>
+                                        <p class="desc">By ilya.kaminetsky</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/s/geovani.html'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/skate.png" alt=" " />
+                                        <h1 style="color: white;">Skate</h1>
+                                        <p class="desc">I do not know who made this</p>
+
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/skate/'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/1v1.jpg" alt=" " />
+                                        <h1 style="color: white;">1v1.lol</h1>
+                                        <p class="desc">By Lior Alterman</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/1/geovani.html'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/slope2.png" alt=" " />
+                                        <h1 style="color: white;">Slope 2</h1>
+                                        <p class="desc">By Rob Kay</p>
+                                        <div style="margin: 24px 0;"> 
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://script.google.com/macros/s/AKfycbzEABC8SQg6hlkWFtIKelwu0WdPRXS0BvWgvSQ4vrSwYj0Qyfw/exec'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/osu.png" alt=" " />
+                                        <h1 style="color: white;">Osu! Mania V3</h1>
+                                        <p class="desc">By Dean Herbert</p>
+                                        <div style="margin: 24px 0;"> 
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/osu/app.html?id=220672247'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/bloonstd2battles.webp" alt=" " />
+                                        <h1 style="color: white;">Bloons TD 2</h1>
+                                        <p class="desc">By Ninja Kiwi</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/bloonstd2/geovani.html'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/mariocombat.jpg" alt=" " />
+                                        <h1 style="color: white;">Mario Combat</h1>
+                                        <p class="desc">By Sun-Studios</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/mc/geovani.html'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/electicman2.jpg" alt=" " />
+                                        <h1 style="color: white;">Eletric Man 2</h1>
+                                        <p class="desc">By Damien Clarke</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/em2/geovani.html'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/shellshockers.jpg" alt=" " />
+                                        <h1 style="color: white;">Shell Shockers</h1>
+                                        <p class="desc">By Blue Wizard Digital</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/shsh/geovani.html'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/fallboys.png" alt=" " />
+                                        <h1 style="color: white;">Fall Boys</h1>
+                                        <p class="desc">By Mentolatux</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/fb/geovani.html'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/flappybird.png" alt=" " />
+                                        <h1 style="color: white;">Flappy Bird</h1>
+                                        <p class="desc">By Dong Nguyen</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/flap/'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/motox3m.jfif" alt=" " />
+                                        <h1 style="color: white;">Moto X3M</h1>
+                                        <p class="desc">By MadPuffers</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/mx/'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/bindingofissac.png" alt=" " />
+                                        <h1 style="color: white;">The Binding Of Issac</h1>
+                                         <p class="desc">By Edmund McMillen</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/binding/geovani.html'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/learn2fly.jpg" alt=" " />
+                                        <h1 style="color: white;">Learn 2 Fly</h1>
+                                        <p class="desc">By Light Bringer Games</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/l2f/geovani.html'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/raftwars2.jpg" alt=" " />
+                                        <h1 style="color: white;">Raft Wars 2</h1>
+                                        <p class="desc">By TinyDobbins</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/rw2/'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/siftheead.png" alt=" " />
+                                        <h1 style="color: white;">Sift Heads World Act 1: Bloody Newcomer</h1>
+                                        <p class="desc">By Pyrozen</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/siftact1/'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/siftheead.png" alt=" " />
+                                        <h1 style="color: white;">Sift Heads World Act 2: The Treacherous Return</h1>
+                                        <p class="desc">By Pyrozen</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/siftact2/'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/siftheead.png" alt=" " />
+                                        <h1 style="color: white;">Sift Heads World Act 3: Alonzo's Reinforcement</h1>
+                                        <p class="desc">By Pyrozen</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/siftact3/'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/siftheead.png" alt=" " />
+                                        <h1 style="color: white;">Sift Heads World Act 4: Cold Memories</h1>
+                                        <p class="desc">By Pyrozen</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/siftact4/'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/siftheead.png" alt=" " />
+                                        <h1 style="color: white;">Sift Heads World Act 5: An Exotic Job</h1>
+                                        <p class="desc">By Pyrozen</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/siftact5/'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/siftheead.png" alt=" " />
+                                        <h1 style="color: white;">Sift Heads World Act 6: Illicit Association</h1>
+                                        <p class="desc">By Pyrozen</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/siftact6/'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/siftheead.png" alt=" " />
+                                        <h1 style="color: white;">Sift Heads World Act 7: Ultimatum</h1>
+                                        <p class="desc">By Pyrozen</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/sift/geovani.html'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/siftrene.jpg" alt=" " />
+                                        <h1 style="color: white;">Sift Renegade 3</h1>
+                                        <p class="desc">By Pyrozen</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/sr3/'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/supersmashflash.png" alt=" " />
+                                        <h1 style="color: white;">Super Smash Flash</h1>
+                                        <p class="desc">By McLeodGaming</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/smf/fpa.html'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/supermb.png" alt=" " />
+                                        <h1 style="color: white;">Super Mario Bros</h1>
+                                        <p class="desc">By Nintendo</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/mario/'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/ultimateflashsonic.jpg" alt=" " />
+                                        <h1 style="color: white;">Ultimate Flash Sonic</h1>
+                                        <p class="desc">By Dennis-Gid</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/sonic/sonic.html'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/ngon.png" alt=" " />
+                                        <h1 style="color: white;">N-gon</h1>
+                                        <p class="desc">By Landgreen</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/ngon/'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/stuntcars2.jpg" alt=" " />
+                                        <h1 style="color: white;">Stunt Cars 2</h1>
+                                        <p class="desc">By Madalin Stanciu</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://zayaruzostreetorgan.com/uploads/5/0/5/6/5056555/custom_themes/607463927942590340/madalinsc2.html'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/portal.png" alt=" " />
+                                        <h1 style="color: white;">Portal</h1>
+                                        <p class="desc">By We Create Stuff</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/shodn/geovani.html'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/minecraft.png" alt=" " />
+                                        <h1 style="color: white;">Minecraft Classic</h1>
+                                        <p class="desc">By Mojang Studios</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://www-sites-opensocial.googleusercontent.com/gadgets/ifr?url=https://sites.google.com/site/s022s4h6/minecraft-classic2.xml'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/catmario.png" alt=" " />
+                                        <h1 style="color: white;">Cat Mario</h1>
+                                        <p class="desc">By Chiku</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='http://www.jezng.com/open-syobon-action.js/'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/connect4.jpg" alt=" " />
+                                        <h1 style="color: white;">Connect Four</h1>
+                                        <p class="desc">By Kenrick95</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://kenrick95.github.io/c4/'">Play</button>
+                                    </div>
+                                </div>                                
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/thehouse.png" alt=" " />
+                                        <h1 style="color: white;">The House</h1>
+                                        <p class="desc">By Artur Kot</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://the-house.arturkot.pl/'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/sandgame.jpg" alt=" " />
+                                        <h1 style="color: white;font-size: 29px;">Sand Game</h1>
+                                        <p class="desc">I do not know who made this</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/sand/'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/hextris.jpg" alt=" " />
+                                        <h1 style="color: white;">Hextris</h1>
+                                        <p class="desc">By Logan Engstrom</p>
+                                        <div style="margin: 24px 0;"> 
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://hextris.io/'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/2048log.png" alt=" " />
+                                        <h1 style="color: white;">2048</h1>
+                                        <p class="desc">By Gabriele Cirulli</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://www.hoodamath.com/mobile/games/2048/game.html?nocheckorient=1'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/fnaf2.jpg" alt=" " />
+                                        <h1 style="color: white;">FNAF 2</h1>
+                                        <p class="desc">By Scottgames</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/g/app.html?id=623724317'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                   <div class="card">
+                                       <img class="thumb" width="300" height="300" src="/Images/slope.jpg" alt=" " />
+                                        <h1 style="color: white;">Slope</h1>
+                                        <p class="desc">By Rob Kay</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/slo/'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/tabs.png" alt=" " />
+                                        <h1 style="color: white;">Tabs</h1>
+                                        <p class="desc">By Landfall Games</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://images-docs-opensocial.googleusercontent.com/gadgets/ifr?url=https://sites.google.com/site/xml0259fegow/tabs.xml'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/amongus.jpg" alt=" " />
+                                        <h1 style="color: white;">Among Us</h1>
+                                        <p class="desc">By InnerSloth LLC</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/among/'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/basketballs.jpg" alt=" " />
+                                        <h1 style="color: white;font-size: 29px;">Basketball Stars</h1>
+                                        <p class="desc">By Madpuffers</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/bstar/'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/superhot.jpg" alt=" " />
+                                        <h1 style="color: white;font-size: 29px;">Superhot</h1>
+                                        <p class="desc">By SUPERHOT Team</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/suh/index.html'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                   <div class="card">
+                                       <img class="thumb" width="300" height="300" src="/Images/madnesshydra.webp" alt=" " />
+                                        <h1 style="color: white;font-size: 29px;">Madness Hydraulic</h1>
+                                        <p class="desc">By TomFulp</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/madnessh/'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                   <div class="card">
+                                       <img class="thumb" width="300" height="300" src="/Images/infiltrating.jpg" alt=" " />
+                                        <h1 style="color: white;font-size: 29px;">Infiltrating The Airship</h1>
+                                        <p class="desc">By PuffballsUnited</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/ita/'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/fleeing.jpg" alt=" " />
+                                        <h1 style="color: white;font-size: 29px;">Fleeing The Complex</h1>
+                                        <p class="desc">By PuffballsUnited</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/ftc/'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/escapingtheprison.jpg" alt=" " />
+                                        <h1 style="color: white;font-size: 29px;">Escaping The Prison</h1>
+                                        <p class="desc">By PuffballsUnited</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/etp/'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/stealingthediamond.jfif" alt=" " />
+                                        <h1 style="color: white;font-size: 29px;">Stealing The Diamond</h1>
+                                        <p class="desc">By PuffballsUnited</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/std/'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                     <div class="card">
+                                         <img class="thumb" width="300" height="300" src="/Images/breakingthebank.jfif" alt=" " />
+                                        <h1 style="color: white;font-size: 29px;">Breaking The Bank</h1>
+                                         <p class="desc">By PuffballsUnited</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/breaktb/'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/chaosfaction2.png" alt=" " />
+                                        <h1 style="color: white;font-size: 29px;">Chaos Faction 2</h1>
+                                        <p class="desc">By Dissolute Productions</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/cf2/'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/miami.jfif" alt=" " />
+                                        <h1 style="color: white;">Miami Shark</h1>
+                                        <p class="desc">By Wiesi</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/miami/geovani.html'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/thingt4.png" alt=" " />
+                                        <h1 style="color: white;">Thing Thing 4</h1>
+                                        <p class="desc">By Diseased Productions</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/tt4/'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/ashbel.webp" alt=" " />
+                                        <h1 style="color: white;">Ashbelt</h1>
+                                        <p class="desc">By Super Sun Studios</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/ashbelt/'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/johnny.webp" alt=" " />
+                                        <h1 style="color: white;">Johnny Rocketfingers 2</h1>
+                                        <p class="desc">By Conspiracy Entertainment</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/jr2/'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/johnnyrocket.jfif" alt=" " />
+                                        <h1 style="color: white;">Johnny Rocketfingers</h1>
+                                        <p class="desc">By Conspiracy Entertainment</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/jr/'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/templerun2.avif" alt=" " />
+                                        <h1 style="color: white;">Temple Run 2</h1>
+                                        <p class="desc">By Imangi Studios</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/tr2/'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/talkingben.jfif" alt=" " />
+                                        <h1 style="color: white;">Talking Ben</h1>
+                                        <p class="desc">By Outfit7 Limited</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/g/app.html?id=647477048'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/fivenights.webp" alt=" " />
+                                        <h1 style="color: white;">Five Nights at Freddy's</h1>
+                                        <p class="desc">By Scottgames</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/Five-Nights-at-Freddys-Web/'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/minecraft.png" alt=" " />
+                                        <h1 style="color: white;">Eaglercraft</h1>
+                                        <p class="desc">By LAX1DUDE</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/eaglercraft/javascript/'">Play</button>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/eaglerservers/'">Servers</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/terraria.webp" alt=" " />
+                                        <h1 style="color: white;">Terraria</h1>
+                                        <p class="desc">By Re-Logic</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/g/app.html?id=322341152'">Play</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card">
+                                        <img class="thumb" width="300" height="300" src="/Images/raftwars.png" alt=" " />
+                                        <h1 style="color: white;font-size: 29px;">Raft Wars</h1>
+                                        <p class="desc">By TinyDobbins</p>
+                                        <div style="margin: 24px 0;">
+                                        </div>
+                                        <button class="white" onclick="window.location.href='https://classroom-google-com.github.io/raftwars/geovani.html'">Play</button>
+                                    </div>
+                                </div>
+
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box__close"></div>
+            <div class="box__title">
+                <h1 class="box__title-heading">
+                    Geovani's Games<br />
+                </h1>
+                <h3>Geovani's Games on top</h3>
+                    <a style="color: #73ad21;font-size: 15px;" href="https://discord.gg/TkAjcn7YNy">My Discord Server</a>
+                    <div class="wrapper-img"><img style="width: 200px; height: 200px;" src="/imag/ppi.png" alt=""/></div>
+
+            </div>
+            <div class="copyright">
+              <h4><a style="color: white;font-size: 15px;" href="https://3kh0.github.io/">Website Credits</a><br>
+      
+            </div>
+        </div>
+        <script src="/js/lib/jquery-2.2.4.min.js"></script>
+        <script src="/js/lib/particles.min.js"></script>
+        <script src="/js/homepage.js"></script>
+        <script src="/js/particles.js"></script>
+        <script src="/js/main.js"></script>
+    </body>
+</html>
