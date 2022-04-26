@@ -1,0 +1,349 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://eagler.nully.tech/servers/bulma/bulma-pageloader-min.css">
+<link rel="canonical" href="https://wikiki.github.io/elements/pageloader/">
+<link rel="stylesheet" href="https://eagler.nully.tech/servers/style.css">
+<link rel="icon" type="image/png" href="https://eagler.nully.tech/servers/image/favicon_nhd.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+  integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+<link rel="stylesheet"
+  href="https://raw.githubusercontent.com/CreativeBulma/bulma-tooltip/master/dist/bulma-tooltip.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<meta content="EaglerCraft FAQ - Server List" property="og:title" />
+<meta content="EaglerCraft FAQ, compiled by Priansh Mittra or ayonull" property="og:description" />
+<meta content="https://primitt.dev/EaglerCraftFAQ/servers" property="og:url" />
+<meta content="#43B581" data-react-helmet="true" name="theme-color" />
+<link rel="stylesheet" href="https://eagler.nully.tech/dist/stylesheet.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<header class="headercolor ">
+  <nav class="level-right is-centered">
+    <a href="../signup.html" class="button is-rounded is-primary is-light" style="margin-bottom: 10px; margin-top: 10px;"
+      href="../index.html">
+      <span>Sign Up</span>
+
+    </a>
+    <a href="https://eagler.nully.tech/servers/login" class="button is-rounded is-primary is-light">
+      <span>Login</span>
+    </a>
+    </a>
+  </nav>
+</header>
+<style>
+  .navbar-item:hover {
+    background-color: #43B581 !important;
+  }
+</style>
+<style>
+  .svrpopup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+
+
+  @-webkit-keyframes animatetop {
+    from {
+      top: -300px;
+      opacity: 0
+    }
+
+    to {
+      top: 0;
+      opacity: 1
+    }
+  }
+
+  @keyframes animatetop {
+    from {
+      top: -300px;
+      opacity: 0
+    }
+
+    to {
+      top: 0;
+      opacity: 1
+    }
+  }
+
+
+  .close {
+    color: white;
+    float: right;
+    font-size: 100px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #40C0FF;
+    color: white;
+  }
+
+  .modal-body {
+    padding: 2px 16px;
+  }
+
+  .box {
+    background-color: #292828;
+  }
+
+  .background-color {
+    background-color: #000000;
+  }
+  .cont-notif{
+    margin-top: 20px;
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+  .headercolor{
+    background-color: #4c4c4c;
+    color: white;
+  }
+  .dropdown-menu{
+    background-color: #4c4c4c;
+    color: #4c4c4c;
+  }
+</style>
+<header class="headercolor is-hidden">
+  <nav class="level-right is-centered">
+    <!-- make a home button -->
+    <div class="dropdown is-hoverable" style="margin-bottom:10px; margin-right:10px; margin-top:10px">
+      <div class="dropdown-trigger">
+        <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">
+          <span>Logged in as <b> &nbsp;</span>
+          <span class="icon is-small">
+            <i class="fas fa-angle-down" aria-hidden="true"></i>
+          </span>
+        </button>
+      </div>
+      <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+        <div class="dropdown-content">
+          <div class="dropdown-item">
+            <a href="../signout.html">Sign Out</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="buttons has-addons">
+      <a href="../signout.html" class="button is-rounded headercolor is-normal">
+        <span class="material-icons">
+          home
+        </span>
+        &nbsp; Home
+      </a>
+      <a href="https://eagler.nully.tech/servers/edit" class="button is-rounded headercolor is-normal">
+        <span class="material-icons">
+          view_headline
+        </span>
+        &nbsp; My Servers
+      </a>
+      <a href="https://eagler.nully.tech/servers/newserver" class="button is-rounded headercolor is-normal">
+        <span class="material-icons">
+          add
+        </span>
+        &nbsp; New Server
+      </a>
+    </div>
+    <!-- <p class="is-size-5" style="margin-top:10px; margin-bottom:10px; margin-right:10px">Logged in as <b></b></p> -->
+  </nav>
+</header>
+
+<body class="background-color">
+  <script>
+    var windowhi = window.innerHeight
+    var windowwi = window.innerWidth
+    if (windowhi < 500 && windowwi < 500) {
+      var len = "300px"
+    }
+    else {
+      var len = "500px"
+    }
+  </script>
+  
+  <p></p>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      (document.querySelectorAll('.notification .delete') || []).forEach(($delete) => {
+        const $notification = $delete.parentNode;
+    
+        $delete.addEventListener('click', () => {
+          $notification.parentNode.removeChild($notification);
+        });
+      });
+    });
+  </script>
+<body>
+    <!-- Make a box with a top margin of 20px that is about 20px margin from each side of the screen -->
+    <div class="container" style="margin-top:20px">
+        <div class="box has-text-centered">
+            <p class="title has-text-white">2b2eagler</p>
+            <br>
+            <p class="subtitle has-text-white">IP: wss://2b2eagler-uncracked.chromeos.repl.co/server</p>
+            <p class="subtitle has-text-white">Description: <br> No rules, always online. Adding creative server soon</p>
+        </div>
+        <div class="is-hidden" id="getbtn">
+            <div class="button is-outlined headercolor" onclick="createbox()" >
+                <span class="material-icons">
+                    reply
+                </span>
+                &nbsp; Reply
+            </div>
+        </div>
+        <div class="box is-hidden" id="commentbox">
+            <form action="https://eagler.nully.tech/servers/comment/14" method="POST" class="has-text-centered">
+                <div class="field">
+                    <p class="control has-icons-left">
+                        <textarea class="textarea" type="text" placeholder="Comment" value="" name="comment"></textarea>
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-note"></i>
+                        </span>
+                    </p>
+                </div>
+                <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+                <div class="field">
+                    <div class="g-recaptcha" data-sitekey="6LcYl3EfAAAAAPLHYG7Oa_n_Lfqf--05Z-_-vqP-"></div>
+                </div>
+                <nav class="is-centered has-text-centered">
+                    <div class="field has-text-centered">
+                        <p class="control">
+                            <button class="button is-success">
+                                Comment &nbsp;
+                                <span class="material-icons">
+                                    send
+                                </span>
+                            </button>
+                        </p>
+                    </div>
+                </form>
+            </nav>
+        </div>
+        <br>
+        <script>
+            var replybtn = document.getElementById("getbtn")
+            var commentbox = document.getElementById("commentbox")
+            function createbox() {
+                commentbox.classList.remove("is-hidden")
+            }
+            function removebox() {
+                commentbox.classList.add("is-hidden")
+            }
+        </script>
+        
+            
+                <div class="box">
+                    <nav class="level">
+                        <p class="is-6 has-text-weight-normal has-text-success">mrtcgat</p>
+                        <p class="is-6 has-text-weight-normal has-text-grey-light">Mon, 25 Apr 2022 22:20:00</p>
+                    </nav>
+                    <p class="is-5 has-text-weight-normal has-text-white">how is there 100 votes ??!</p>
+                </div>
+            
+        
+            
+                <div class="box">
+                    <nav class="level">
+                        <p class="is-6 has-text-weight-normal has-text-success">want_to_have_sex</p>
+                        <p class="is-6 has-text-weight-normal has-text-grey-light">Mon, 25 Apr 2022 21:49:00</p>
+                    </nav>
+                    <p class="is-5 has-text-weight-normal has-text-white">Join to talk dirty:
+https://stin.to/twyln</p>
+                </div>
+            
+        
+            
+                <div class="box">
+                    <nav class="level">
+                        <p class="is-6 has-text-weight-normal has-text-success">want_to_have_sex</p>
+                        <p class="is-6 has-text-weight-normal has-text-grey-light">Mon, 25 Apr 2022 21:38:57</p>
+                    </nav>
+                    <p class="is-5 has-text-weight-normal has-text-white">join to talk dirty ;)</p>
+                </div>
+            
+        
+            
+                <div class="box">
+                    <nav class="level">
+                        <p class="is-6 has-text-weight-normal has-text-success">want_to_have_sex</p>
+                        <p class="is-6 has-text-weight-normal has-text-grey-light">Mon, 25 Apr 2022 21:33:11</p>
+                    </nav>
+                    <p class="is-5 has-text-weight-normal has-text-white">Its not working</p>
+                </div>
+            
+        
+            
+                <div class="box">
+                    <nav class="level">
+                        <p class="is-6 has-text-weight-normal has-text-success">fnaffyALT</p>
+                        <p class="is-6 has-text-weight-normal has-text-grey-light">Mon, 25 Apr 2022 20:16:41</p>
+                    </nav>
+                    <p class="is-5 has-text-weight-normal has-text-white">The creative server is here!!!!!!!!!!!!!!!!!!!
+
+&gt;&gt; wss://2b2ecreative.chromeos.repl.co/server</p>
+                </div>
+            
+        
+            
+                <div class="box">
+                    <nav class="level">
+                        <p class="is-6 has-text-weight-normal has-text-success">sasafar</p>
+                        <p class="is-6 has-text-weight-normal has-text-grey-light">Mon, 25 Apr 2022 12:41:41</p>
+                    </nav>
+                    <p class="is-5 has-text-weight-normal has-text-white">i cant play
+</p>
+                </div>
+            
+        
+            
+                <div class="box">
+                    <nav class="level">
+                        <p class="is-6 has-text-weight-normal has-text-success">sasafar</p>
+                        <p class="is-6 has-text-weight-normal has-text-grey-light">Mon, 25 Apr 2022 12:27:12</p>
+                    </nav>
+                    <p class="is-5 has-text-weight-normal has-text-white">hi some time the world got restes can you fix it thx </p>
+                </div>
+            
+        
+            
+                <div class="box">
+                    <nav class="level">
+                        <p class="is-6 has-text-weight-normal has-text-success">fnaf69</p>
+                        <p class="is-6 has-text-weight-normal has-text-grey-light">Sun, 24 Apr 2022 20:59:07</p>
+                    </nav>
+                    <p class="is-5 has-text-weight-normal has-text-white">Top server less go!</p>
+                </div>
+            
+        
+    </div>
+</body>
