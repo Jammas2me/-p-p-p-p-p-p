@@ -1,1 +1,0 @@
-These are sample source files to assist the process of integrating Eaglercraft into other projects, or to assist the process of integrating other projects into Eaglercraft
